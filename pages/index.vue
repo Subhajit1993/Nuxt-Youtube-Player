@@ -17,7 +17,7 @@
           v-model="keyword"
         ></v-text-field>
       </v-layout>
-      <v-layout row wrap>
+      <v-layout row wrap style="min-height: 20rem">
         <v-flex xs12 md3 v-for="(item,index) in videoList" :key="index" class="video-list-flex">
           <v-card class="list-card" @click="showPlayer(item.id.videoId)">
             <div class="listing-image">
@@ -35,7 +35,7 @@
           </v-card>
         </v-flex>
       </v-layout>
-      <v-layout style="justify-content: center; margin-top: 20px">
+      <v-layout style="justify-content: center; margin-top: 20px" v-if="videoList.length">
         <v-btn
           :loading="show_loader"
           :disabled="show_loader"
@@ -90,7 +90,7 @@
       keyword: '',
       nextPageToken: '',
       videoList: [],
-      api_key: 'AIzaSyBAekYC1Hu6cHgmGsa5lo3kr9agqyYp3gs'
+      api_key: '##############'
     }),
     mounted() {
       if (this.$route.query.q) {

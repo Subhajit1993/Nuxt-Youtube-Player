@@ -1,6 +1,6 @@
 # YoutubeClone
 
-> My classy Nuxt.js project
+> My classy universal Vue.js project
 
 ## Build Setup
 
@@ -19,4 +19,7 @@ $ yarn start
 $ yarn run generate
 ```
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+### Project Details
+1. Created using PWA guidelines
+2. All the requests to youtube api are cached so that app will work with slow and faulty network
+3. Replace the youtube `api_key` field in `index.vue` with your own api key

@@ -55,7 +55,7 @@ export default {
         strategyOptions: {
           cacheName: 'Runtime-Cache',
           cacheExpiration: {
-            maxEntries: 50,
+            maxEntries: 100,
             maxAgeSeconds: 24 * 60 * 60
           }
         }
